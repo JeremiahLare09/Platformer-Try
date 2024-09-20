@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://d3dsm0kh8tg5a"]
+[gd_scene load_steps=18 format=3 uid="uid://d3dsm0kh8tg5a"]
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_rkp87"]
 [ext_resource type="PackedScene" uid="uid://b1uv3c2cbxbmu" path="res://Scenes/player.tscn" id="1_wp1lj"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://Scripts/label.gd" id="6_o1lv3"]
 [ext_resource type="PackedScene" uid="uid://t8fywc8flrsw" path="res://Scenes/grass platform.tscn" id="6_pkg17"]
 [ext_resource type="PackedScene" uid="uid://bnvdklyu1dg1a" path="res://Scenes/coin.tscn" id="7_m1sjk"]
+[ext_resource type="PackedScene" uid="uid://bltkvuic2j0l5" path="res://Scenes/slime.tscn" id="11_riprs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4nr8i"]
 texture = ExtResource("3_hptx4")
@@ -351,3 +352,6 @@ position = Vector2(673, -262)
 
 [node name="Coin14" parent="Coins" instance=ExtResource("7_m1sjk")]
 position = Vector2(816, -238)
+
+[node name="slime" parent="." instance=ExtResource("11_riprs")]
+position = Vector2(728, 14)
